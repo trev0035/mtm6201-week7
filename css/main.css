@@ -1,0 +1,31 @@
+.dice circle {
+    fill: rgb(0, 76, 255);
+    transition: all 0.5s;
+    transform-origin: 25px 25px;
+}
+
+.dice:hover circle {
+    transform: scale(1.2);
+}
+
+.cls-1{fill:#ffe269;}.cls-2{fill:#fff;}.cls-3{fill:#fcf0c0;}
+
+.smily-wrap{
+    max-width: 300px;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.pupils{
+    animation: move 1s infinite;
+}
